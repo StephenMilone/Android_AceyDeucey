@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ! Excerpted from "Hello, Android! 3e",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
+-->
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" android:background="@drawable/background">
+   <ImageView android:layout_marginRight="200dp" android:layout_marginBottom="200dp" android:layout_marginLeft="30dp" android:id="@+id/FirstCard" android:src="@drawable/card_back" android:layout_gravity="top|left" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="40dp">
+   </ImageView>
+<ImageView  android:layout_marginRight="30dp" android:layout_marginBottom="200dp" android:layout_marginLeft="200dp" android:id="@+id/SecondCard" android:src="@drawable/card_back" android:layout_gravity="top|right" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="40dp"></ImageView><ImageView android:id="@+id/ThirdCard" android:src="@drawable/card_back" android:layout_gravity="center_horizontal" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginTop="140dp">
+   </ImageView>
+<TextView
+	android:layout_height="wrap_content"
+	android:id="@+id/TopText" android:text="Welcome, use the slider to select the amount to bet and touch deal.  In the casino variation you bet before you see the cards unlike the mutiplayer where you see the cards first." android:layout_width="wrap_content" android:textSize="10dp" android:textStyle="bold" android:lines="3" android:textColor="#000000"/>
+<SeekBar android:max="99" android:id="@+id/BetBar" android:minWidth="300dp" android:layout_width="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:layout_height="wrap_content" android:progress="4" android:layout_marginTop="85dp"/>
+
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|center_horizontal" android:text="   DEAL   " android:id="@+id/FirstDealButton" android:clickable="true" android:height="20dp" android:width="75dp" android:layout_marginBottom="70dp"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/StandButton" android:text=" STAND " android:layout_gravity="bottom|center_horizontal" android:width="75dp" android:height="20dp" android:layout_marginBottom="90dp" android:layout_marginLeft="-90dp"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|center_horizontal" android:id="@+id/RaiseButton" android:text=" RAISE " android:width="75dp" android:height="20dp" android:layout_marginBottom="90dp" android:layout_marginLeft="90dp"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|center_horizontal" android:height="20dp" android:id="@+id/OkayButton" android:width="125dp" android:text="Next Hand" android:layout_marginBottom="70dp"></Button>
+
+
+<TextView android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:layout_width="wrap_content" android:id="@+id/MiddleText" android:text="$5" android:layout_marginTop="35dp" android:textSize="30dp" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:textColor="#339944" android:shadowColor="#000000"></TextView>
+<TextView android:text="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|right" android:minLines="4" android:id="@+id/BotRightText" android:textColor="#6644dd"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|left" android:minLines="2" android:id="@+id/BotLeftText" android:textColor="#3366DD"></TextView>
+</FrameLayout>

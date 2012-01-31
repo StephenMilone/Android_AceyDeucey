@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string
+		name="app_name">Acey Deucey</string>
+	<string
+		name="main_title">Acey Deucey by Stephen Milone</string>
+	<string
+		name="continue_label">Continue</string>
+	<string
+		name="new_game_label">New Game</string>
+	<string
+		name="about_label">About</string>
+	<string
+		name="exit_label">Exit</string>
+	<string
+		name="about_title">Acey Deucey / Red Dog</string>
+	<string
+		name="continue_msg">You shouldnt be seeing this...please report it to me - android@stephenmilone.com</string>
+	<string
+		name="settings_label">Settings...</string>
+	<string
+		name="settings_title">Acey Deucey Settings</string>
+	<string
+		name="settings_shortcut">s</string>
+	<string
+		name="music_title">Music</string>
+	<string
+		name="music_summary">Enable Sound Effects [Coming soon]</string>
+	<string
+		name="hints_title">Hints</string>
+	<string
+		name="hints_summary">Show hints during play</string>
+	<string
+		name="socialsubmit_title">Link Social Networks</string>
+	<string
+		name="socialsubmit_summary">Post Scores via Twitter/Facebook/MySpace - Currently Unavailable</string>
+	<string
+		name="new_game_title">Game Mode</string>
+	<string
+		name="game_label">Start Game</string>
+	<string
+		name="tut_label">Tutorial and Rules</string>
+	<string
+		name="tutorial_msg">
+		The game only uses three cards at a time, which are ranked as in
+		poker, with aces high. Suit is irrelevant. A wager is placed, and two
+		cards are placed face up on the table, with three possible outcomes:
+		\n\n1) If the cards are consecutive in number [Example: 4-5 or
+		Jack-Queen], the hand is a push and the player\'s wager is returned.
+		No third card is dealt.
+		\n2) If the two cards are of equal value, a third card is dealt. If the
+		third card is of the same value, then the payout for the player is
+		<b>11:1</b>, otherwise the hand is a push.
+		\n3) If neither of the above is the case [Example: 3-8], then a spread is
+		announced which determines the payoff [A 4-card spread in this
+		example], and a third card will be dealt. Before dealing the third
+		card, the player has the option to double their bet. If the third
+		card\'s value falls between the first two, the player will receive a
+		payoff according to the spread; otherwise the bet is lost.
+		\n\n<b>Spread : Payout
+		\n1-card : 5 to 1
+		\n2-card : 4 to 1
+		\n3-card : 2 to 1
+		\n4-to-11-card : 1 to 1 (even money)</b>
+		\n[<i>The above was pulled from Wikipedia</i>]
+		\n\nThe player is given an $100 bank roll to start with and can bet anywhere
+		from $1 to the max. The game\'s deck consist of 8 standard 52 card
+		decks, 416 cards. The hints at the top of screen during gameplay will
+		provide insight as to what is going on in the game and your current
+		status, which have now been turned on if they were off. The game ends after your bank roll is $0, then your high
+		score, which is the highest amount of money you had during this run,
+		will be submitted to the global high score list via Scoreloop.\n\n\n\n
+	</string>
+	<string
+		name="about_msg">
+		Acey Deucey can be played in a variety of ways. This game uses
+		the rules of the casino variant of Acey Deucey known as Red Dog.
+		\nAcey Deucey is a 3 card game, the player is dealt 2 cards face up
+		and wins if the 3rd card\'s value falls between the first two cards.
+		\n\n<b>Acey Deucey/Red Dog Differences</b>
+		\nAcey Deucey is a game played in a group, with a community pot, you can
+		only win as much as you bet and you can only bet what is in the pot,
+		however certain outcomes could force you to lose double, even triple
+		your bet. Red Dog is a casino variant that can be played solo, it also
+		let\'s you bet whatever you have, and you win pay outs based on odds.
+		See the Rules and Tutorial section for more info.
+		\n\nThe main difference people will notice is that Acey Deucey lets the
+		player see the first 2 cards before placing a bet, in Red Dog players
+		bet first, but then are given an option to double their bet after
+		seeing the 2 cards, because of this in Acey Deucey if a player is
+		dealt an unwinnable hand [Ex: 6-7], the player can bet $0 or \'pass\',
+		in Red Dog the unwinnable hands are a push.
+		\n\nFor a longer reading on the differences, and why a single player variant
+		of the standard Acey Deucey is hard to produce, please visit\n
+		<bu>http://blog.stephenmilone.com</bu>
+		\n
+		Background image [Pile of cards] is public domain, icon image [3 aces] is courtesy of photos8.com  Thanks to all artists who contributed these free use artwork
+		\n\n\n
+		</string>
+
+	<string
+		name="slname">Blank</string>
+		<string name="hs_sl_label">High Score Board</string>
+		<string name="prof_sl_label">Your Profile</string>
+		<string name="new_sl_title">Scoreloop</string>
+
+</resources>

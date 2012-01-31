@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.milone.aceydeucey"  >
+	<PreferenceCategory
+		android:title="Gameplay Prefs">
+		
+		<CheckBoxPreference
+			android:key="hints"
+			android:title="@string/hints_title"
+			android:summary="@string/hints_summary"
+			android:defaultValue="true" />
+			<CheckBoxPreference android:key="music" android:title="@string/music_title" android:summary="@string/music_summary" android:enabled="false" android:defaultValue="false"/>
+	<CheckBoxPreference android:enabled="false" android:defaultValue="false" android:title="Animation" android:key="animation" android:summary="Display animations of the cards when dealt [Coming soon]"/>
+	</PreferenceCategory>
+
+	<PreferenceCategory
+		android:title="Scoreloop Prefs">
+		<CheckBoxPreference
+			android:defaultValue="true"
+			android:title="Enable Scoreloop"
+			android:summary="This will allow your high score to be submitted to the Scoreloop Highscore database"
+			android:key="scoresubmit" />
+		<CheckBoxPreference
+			android:key="socialsubmit"
+			android:title="@string/socialsubmit_title"
+			android:summary="@string/socialsubmit_summary"
+			android:enabled="false" android:defaultValue="false"/>
+		
+	</PreferenceCategory>
+	
+
+
+
+</PreferenceScreen>

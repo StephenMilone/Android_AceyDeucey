@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.milone.aceydeucey"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/background">
+
+
+
+
+
+<LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="50dp"></LinearLayout>
+	<TextView android:textSize="24.5sp" android:textStyle="bold"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:layout_width="wrap_content" android:text="Acey Deucey"
+		android:textColor="#000000" android:layout_marginTop="15dip"/>
+
+
+	<TextView android:layout_height="wrap_content"
+		android:layout_gravity="center" android:layout_width="wrap_content"
+		android:textSize="12sp" android:textColor="#1234AA" android:textStyle="bold"
+		android:text="By Stephen Milone" />
+
+
+	<Button android:id="@+id/continue_button" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/continue_label"
+		android:layout_marginLeft="30dip" android:layout_marginRight="30dip" />
+		
+		
+	<Button android:id="@+id/new_button" android:layout_width="fill_parent"
+		android:text="@string/new_game_label" android:layout_height="wrap_content"
+		android:drawableLeft="@drawable/icon" android:layout_marginLeft="30dip" android:layout_marginRight="30dip" />
+
+	<Button android:id="@+id/about_button" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/about_label"
+		 android:layout_marginLeft="30dip" android:layout_marginRight="30dip" />
+		
+		
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/scoreboard_button"
+		android:text="High Scores via Scoreloop" android:drawableRight="@drawable/sl_icon_slapp"
+		 android:layout_marginLeft="30dip" android:layout_marginRight="30dip" />
+		
+	<Button android:id="@+id/exit_button" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="@string/exit_label" android:layout_marginLeft="30dip" android:layout_marginRight="30dip"  />
+
+
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:textColor="#1234AA"
+		android:layout_gravity="right" android:textSize="11sp" android:layout_marginRight="20dip" android:text="Version 1.51"/>
+
+</LinearLayout>
+
+	
+	
+	
+
+
+	
+
+
+		
+  
+
+
