@@ -4,7 +4,7 @@ package com.milone.aceydeucey;
  * 
  * Acey Deucey was my first android project that I coded while progressing through the chapters in an Android dev book.
  * I released it in October 2010, but as of Feburary 2012 it is available as open source on github.
- * The market release version of Acey Duecey includes AdMob and Scoreloop libraries for ad banners and global high scores, those have been removed from this copy.
+ * The market release version of Acey Deucey orginally included AdMob and Scoreloop libraries for ad banners and global high scores, those have been removed from this copy.
  * More info available at www.stephenmilone.com and android@stephenmilone.com
  */
 
@@ -119,7 +119,8 @@ public class Gameplay extends Activity {
 		// Set the deck array with the contents of (#) decks
 		Init(8);
 
-		// Get the app's shared preferences
+		// variable "savedgamefile" is a SharedPrefs file used to save info on a game
+		// variable "prefs" is from the settings.xml settings
 		savedgamefile = getSharedPreferences("AcePrefs", 0);
 		SharedPreferences prefs = PreferenceManager
 				.getDefaultSharedPreferences(this);
