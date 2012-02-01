@@ -91,7 +91,7 @@ public class Gameplay extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.test);
+		setContentView(R.layout.gameplay);
 
 		// Initialize all the viewable items from the XML layout
 		firstcardView = (ImageView) findViewById(R.id.FirstCard);

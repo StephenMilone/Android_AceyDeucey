@@ -17,10 +17,10 @@
 	<PreferenceCategory
 		android:title="Scoreloop Prefs">
 		<CheckBoxPreference
-			android:defaultValue="true"
 			android:title="Enable Scoreloop"
 			android:summary="This will allow your high score to be submitted to the Scoreloop Highscore database"
-			android:key="scoresubmit" />
+			android:key="scoresubmit"
+			android:enabled="false" android:defaultValue="false" />
 		<CheckBoxPreference
 			android:key="socialsubmit"
 			android:title="@string/socialsubmit_title"

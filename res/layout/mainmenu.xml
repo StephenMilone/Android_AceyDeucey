@@ -36,12 +36,6 @@
 		android:layout_height="wrap_content" android:text="@string/about_label"
 		 android:layout_marginLeft="30dip" android:layout_marginRight="30dip" />
 		
-		
-	<Button android:layout_width="fill_parent"
-		android:layout_height="wrap_content" android:id="@+id/scoreboard_button"
-		android:text="High Scores via Scoreloop" android:drawableRight="@drawable/sl_icon_slapp"
-		 android:layout_marginLeft="30dip" android:layout_marginRight="30dip" />
-		
 	<Button android:id="@+id/exit_button" android:layout_width="fill_parent"
 		android:layout_height="wrap_content" android:text="@string/exit_label" android:layout_marginLeft="30dip" android:layout_marginRight="30dip"  />
 

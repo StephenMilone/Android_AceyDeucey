@@ -1,28 +1,19 @@
 package com.milone.aceydeucey;
 
-//import com.admob.android.ads.AdManager;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 
 public class AceyDeucey extends Activity implements OnClickListener {
-	/** Called when the activity is first created. */
-	// Context mContext;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
-
-		// AdManager.setTestDevices( new String[]
-		// {AdManager.TEST_EMULATOR,"HT99EHF02135",} );
+		setContentView(R.layout.mainmenu);
 
 		View continueButton = findViewById(R.id.continue_button);
 		continueButton.setOnClickListener(this);
@@ -32,8 +23,8 @@ public class AceyDeucey extends Activity implements OnClickListener {
 		aboutButton.setOnClickListener(this);
 		View exitButton = findViewById(R.id.exit_button);
 		exitButton.setOnClickListener(this);
-		View scoreButton = findViewById(R.id.scoreboard_button);
-		scoreButton.setOnClickListener(this);
+	
+		
 		SharedPreferences app_preferences = getSharedPreferences("AcePrefs", 0);
 		boolean active_save = app_preferences.getBoolean("active_save", false);
 
@@ -77,9 +68,6 @@ public class AceyDeucey extends Activity implements OnClickListener {
 		case R.id.new_button:
 			openNewGameDialog();
 			break;
-		//case R.id.scoreboard_button:
-		//	startActivity(new Intent(AceyDeucey.this, EntryScreenActivity.class));
-		//	break;
 		case R.id.exit_button:
 			finish();
 			break;
