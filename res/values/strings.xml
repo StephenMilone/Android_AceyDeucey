@@ -15,9 +15,7 @@
 	<string
 		name="about_title">Acey Deucey / Red Dog</string>
 	<string
-		name="continue_msg">You shouldnt be seeing this...please report it to me - android@stephenmilone.com</string>
-	<string
-		name="settings_label">Settings...</string>
+		name="settings_label">Settings..</string>
 	<string
 		name="settings_title">Acey Deucey Settings</string>
 	<string
@@ -67,9 +65,7 @@
 		from $1 to the max. The game\'s deck consist of 8 standard 52 card
 		decks, 416 cards. The hints at the top of screen during gameplay will
 		provide insight as to what is going on in the game and your current
-		status, which have now been turned on if they were off. The game ends after your bank roll is $0, then your high
-		score, which is the highest amount of money you had during this run,
-		will be submitted to the global high score list via Scoreloop.\n\n\n\n
+		status, which have now been turned on if they were off. The game ends after your bank roll is $0.\n\n\n\n
 	</string>
 	<string
 		name="about_msg">
@@ -98,10 +94,6 @@
 		\n\n\n
 		</string>
 
-	<string
-		name="slname">Blank</string>
-		<string name="hs_sl_label">High Score Board</string>
-		<string name="prof_sl_label">Your Profile</string>
-		<string name="new_sl_title">Scoreloop</string>
+	
 
 </resources>

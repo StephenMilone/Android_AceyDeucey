@@ -5,8 +5,4 @@
 <item>@string/tut_label</item>
 </array>
 
-<array name="sub_sl_menu">
-<item>@string/hs_sl_label</item>
-<item>@string/prof_sl_label</item>
-</array>
 </resources>

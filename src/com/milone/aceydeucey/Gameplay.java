@@ -74,15 +74,9 @@ public class Gameplay extends Activity {
 	private int mCardCount;
 	private int currentcard = -1;
 	private int handsplayed = 0;
-	private int saved_hands = 0;
-	private int saved_score = 0;
-	// private boolean saved_submit_sucess = false;
 	private String statstext;
 	private String lasthandtext;
-	private String slname;
 	private boolean hintson;
-	private boolean scoresubmit;
-	// private boolean socialsubmit;
 	private boolean start_saved_game;
 
 	private SharedPreferences savedgamefile;
@@ -127,11 +121,6 @@ public class Gameplay extends Activity {
 
 		// Get the username from shared prefs or scoreloop, ifnot null store it
 		hintson = prefs.getBoolean("hints", true);
-		scoresubmit = prefs.getBoolean("scoresubmit", true);
-		// socialsubmit = prefs.getBoolean("socialsubmit", true);
-		slname = savedgamefile.getString("slname", "player_###");
-		saved_score = savedgamefile.getInt("saved_score", 0);
-		saved_hands = savedgamefile.getInt("saved_hands", 0);
 		start_saved_game = savedgamefile
 				.getBoolean("start_saved_game", false);
 
@@ -327,15 +316,13 @@ public class Gameplay extends Activity {
 
 				nextDeal.setVisibility(4);
 
-				if (scoresubmit == false) {
 					AlertDialog.Builder alertboxn = new AlertDialog.Builder(
 							this);
 					alertboxn
 							.setMessage("   Game Over\nYou played "
 									+ handsplayed
 									+ " hands and your highest point was $"
-									+ bankpeak
-									+ ". High score submission disabled via user settings");
+									+ bankpeak);
 					alertboxn.setNeutralButton("Ok",
 							new DialogInterface.OnClickListener() {
 								public void onClick(DialogInterface arg0,
@@ -345,43 +332,7 @@ public class Gameplay extends Activity {
 							});
 
 					alertboxn.show();
-				} else
-
-				{
-
-					AlertDialog.Builder alertbox = new AlertDialog.Builder(this);
-					alertbox.setMessage("   Game Over\nYou played "
-							+ handsplayed
-							+ " hands and your highest point was $"
-							+ bankpeak
-							+ ". Now connecting to Scoreloop to submit your score under the name: "
-							+ slname);
-					alertbox.setNeutralButton("Ok",
-							new DialogInterface.OnClickListener() {
-								public void onClick(DialogInterface arg0,
-										int arg1) {
-
-									//final Score myscore = new Score(
-									//		(double) bankpeak, null);
-									//myscore.setLevel(handsplayed);
-
-									//final ScoreController myScoreController = new ScoreController(
-									//		new ScoreSubmitObserver());
-
-									// Use the controller to submit to the
-									// server
-									//myScoreController.submitScore(myscore);
-
-									// ScoreloopManager.submitScore(bankpeak,
-									// new ScoreSubmitObserver());
-									showToast("Awaiting high score upload to finish.");
-									// showProgressIndicator();
-								}
-							});
-
-					alertbox.show();
-				}
-
+				
 			}
 
 		}
