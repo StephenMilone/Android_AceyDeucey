@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class AceyDeucey extends Activity implements OnClickListener {
 	@Override
@@ -15,32 +16,35 @@ public class AceyDeucey extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.mainmenu);
 
-		View continueButton = findViewById(R.id.continue_button);
+		//Declare Button variables and make them listen for clicks (touches)
+		Button continueButton = (Button) findViewById(R.id.continue_button);
+		Button newButton = (Button) findViewById(R.id.new_button);
+		Button aboutButton = (Button) findViewById(R.id.about_button);
+		Button exitButton = (Button) findViewById(R.id.exit_button);
 		continueButton.setOnClickListener(this);
-		View newButton = findViewById(R.id.new_button);
 		newButton.setOnClickListener(this);
-		View aboutButton = findViewById(R.id.about_button);
 		aboutButton.setOnClickListener(this);
-		View exitButton = findViewById(R.id.exit_button);
 		exitButton.setOnClickListener(this);
 	
-		
+		//Load the shared Prefs and check if a save game is active.
 		SharedPreferences app_preferences = getSharedPreferences("AcePrefs", 0);
 		boolean active_save = app_preferences.getBoolean("active_save", false);
 
+		//If so, let the continue button be enabled, otherwise only new game can be choosen
 		if (active_save == false)
 			continueButton.setEnabled(false);
 		else
 			continueButton.setEnabled(true);
-
 	}
 
 	@Override
 	protected void onResume() {
 		super.onResume();
+		//When returning to this activity, check again if a save game exists 
+		//enable/disable the continue button as before
 		SharedPreferences app_preferences = getSharedPreferences("AcePrefs", 0);
 		boolean active_save = app_preferences.getBoolean("active_save", false);
-		View continueButton = findViewById(R.id.continue_button);
+		Button continueButton = (Button) findViewById(R.id.continue_button);
 
 		if (active_save == false)
 			continueButton.setEnabled(false);
@@ -49,8 +53,10 @@ public class AceyDeucey extends Activity implements OnClickListener {
 
 	}
 
+	
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
+	
+	//switch determines which button was clicked.
 		switch (v.getId()) {
 		case R.id.continue_button:
 
